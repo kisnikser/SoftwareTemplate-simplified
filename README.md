@@ -1,13 +1,8 @@
 # Project template 
 
-<p align="center">
-  <a href="https://github.com/intsystems/ProjectTemplate/workflows/test/badge.svg"><img  src="https://github.com/intsystems/ProjectTemplate/tree/master"></a>
-  
-  <a href="https://img.shields.io/codecov/c/github/intsystems/ProjectTemplate/master"><img  src="https://app.codecov.io/gh/intsystems/ProjectTemplate"></a>
-  
-  <a href="https://github.com/intsystems/ProjectTemplate/workflows/docs/badge.svg"><img  src="https://intsystems.github.io/ProjectTemplate/"></a>
-  
-</p>
+[<img src="https://github.com/intsystems/ProjectTemplate/workflows/test/badge.svg">](https://github.com/intsystems/ProjectTemplate/tree/master)
+[<img src="https://img.shields.io/codecov/c/github/intsystems/ProjectTemplate/master">](https://app.codecov.io/gh/intsystems/ProjectTemplate)
+[<img src="https://github.com/intsystems/ProjectTemplate/workflows/docs/badge.svg">](https://intsystems.github.io/ProjectTemplate)
 
 
 
