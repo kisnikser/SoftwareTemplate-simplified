@@ -9,8 +9,9 @@ def read(file_path):
         return f.read()
 
 
-readme = read('README.rst')
-# вычищаем локальные версии из файла requirements (согласно PEP440)
+readme = read('README.md')
+# clearing local versions
+# https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
 requirements = '\n'.join(
     re.findall(r'^([^\s^+]+).*$',
                read('requirements.txt'),
@@ -22,12 +23,11 @@ setup(
     name='mylib',
     version=__version__,
     license='MIT',
-    author='Andrey Grabovoy',
-    author_email="grabovoy.av@phystech.edu",
+    author='Greg Psoi',
+    author_email="psoi.greg@gmail.com",
     description='mylib, python package',
     long_description=readme,
-    url='https://github.com/Intelligent-Systems-Phystech/ProjectTemplate',
-
+    url='https://github.com/intsystems/SoftwareTemplate-simplified',
     # options
     packages=find_packages(),
     install_requires=requirements,
