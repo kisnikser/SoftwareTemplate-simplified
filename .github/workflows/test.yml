@@ -35,7 +35,7 @@ jobs:
           
       - name: Testing
         run: |
-          PYTHONPATH=src/ python -m pytest tests/ --cov=mylib --cov-report=xml
+          PYTHONPATH=src/ sudo python -m pytest tests/ --cov=mylib --cov-report=xml
       
       - name: Generate coverage badge
         run: |
