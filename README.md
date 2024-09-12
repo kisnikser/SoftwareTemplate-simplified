@@ -1,13 +1,25 @@
 # Project template 
 
 [<img src="coverage-badge.svg">](https://github.com/intsystems/ProjectTemplate/tree/master)
-[<img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white">](https://intsystems.github.io/ProjectTemplate)
+[<img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white">](https://intsystems.github.io/SoftwareTemplate-simplified)
 
 
 
 
 ## Abstract
+This is a simplified template for software/libraries at Intelligent Systems.
 
-Purus sit amet luctus venenatis lectus magna fringilla. Condimentum id venenatis a condimentum vitae sapien. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Eget egestas purus viverra accumsan in. Nam aliquam sem et tortor. Donec et odio pellentesque diam volutpat commodo. Odio pellentesque diam volutpat commodo sed egestas. Sit amet dictum sit amet justo. Pellentesque sit amet porttitor eget. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Quis varius quam quisque id diam vel quam elementum. Ornare lectus sit amet est placerat in. Vulputate dignissim suspendisse in est ante. Elit sed vulputate mi sit amet mauris. Egestas sed tempus urna et pharetra pharetra. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.
+The template is inherited from [Project template](https://github.com/intsystems/ProjectTemplate)
 
+## Repository creation
+After repository creation (recommended way is not to fork, but use is as a template), please do the steps from [this manual](https://github.com/intsystems/.github/blob/main/profile/repository_structure_rtfm.md).
 
+## Master branch
+By desing, master branch is protected from committing.  You should make pull requests to make changes into it.
+
+## Documentation and test coverage
+Documentation and test coverage badges can be updated automatically usign [github actions](.github/workflows).
+
+Initially both of these workflows are disabled (but can be run via "Actions" page).
+
+To enable them automatically on push to master branch, change corresponding "yaml" files.

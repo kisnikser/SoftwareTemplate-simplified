@@ -7,7 +7,6 @@
 - pip >= 20.0.2
 
 ### Installing by using PyPi
-========================
 
 **Install**
 ```
