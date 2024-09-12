@@ -1,7 +1,6 @@
 # Project template 
 
-[<img src="https://github.com/intsystems/ProjectTemplate/workflows/test/badge.svg">](https://github.com/intsystems/ProjectTemplate/tree/master)
-[<img src="https://img.shields.io/codecov/c/github/intsystems/ProjectTemplate/master">](https://app.codecov.io/gh/intsystems/ProjectTemplate)
+[<img src="coverage-badge.svg">](https://github.com/intsystems/ProjectTemplate/tree/master)
 [<img src="https://github.com/intsystems/ProjectTemplate/workflows/docs/badge.svg">](https://intsystems.github.io/ProjectTemplate)
 
 
