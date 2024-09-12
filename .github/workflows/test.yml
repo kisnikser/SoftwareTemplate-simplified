@@ -27,7 +27,8 @@ jobs:
         
       - name: Install PyTest
         run: |
-          pip install -U pytest>=7.2.0 pytest-cov>=4.0.0
+          pip install -U pytest>=7.2.0
+          pip install -U pytest-cov>=4.0.0
       
       - name: Install Dependencies
         run: |    
