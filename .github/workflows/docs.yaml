@@ -8,35 +8,29 @@ on:
   #pull_request:
   #  branches: [ master ]
 
+permissions:
+  contents: write
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        python-version: [3.10]
-        
     steps:
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: "3.10"
-
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        
-      - name: Install Dependencies
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
         run: |
-          pip install -U mkdocs>=1.6.0 mkdocs-material>=9.5.0 mkdocstrings-python>1.10.0
-          
-#      - name: Build Docs
-#        run: |
-#          sphinx-build -b html ./doc/source/ public
-#          touch public/.nojekyll
-          
-#      - name: Deploy 🚀
-#        uses: JamesIves/github-pages-deploy-action@releases/v3
-#        with:
-#          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-#          BRANCH: gh-pages
-#          FOLDER: public
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install "mkdocs>=1.6.0" "mkdocs-material>=9.5.0" "mkdocstrings-python>=1.10.0"
+
+      - run: cd docs; mkdocs gh-deploy --force
+      
+

@@ -1,7 +1,7 @@
 # Project template 
 
 [<img src="coverage-badge.svg">](https://github.com/intsystems/ProjectTemplate/tree/master)
-[<img src="https://github.com/intsystems/ProjectTemplate/workflows/docs/badge.svg">](https://intsystems.github.io/ProjectTemplate)
+[<img src=""https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white">](https://intsystems.github.io/ProjectTemplate)
 
 
 
