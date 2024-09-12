@@ -18,7 +18,7 @@ After repository creation (recommended way is not to fork, but use is as a templ
 By desing, master branch is protected from committing.  You should make pull requests to make changes into it.
 
 ## Documentation and test coverage
-Documentation and test coverage badges can be updated automatically usign [github actions](.github/workflows).
+Documentation and test coverage badges can be updated automatically using [github actions](.github/workflows).
 
 Initially both of these workflows are disabled (but can be run via "Actions" page).
 
