@@ -21,7 +21,7 @@ class SyntheticBernuliDataset(object):
             m (int): object number. Defaults to 100.
             seed (int): random state seed. Defaults to 42.
         """
-        rs = numpy.random.RandomState(seed)
+        rs = np.random.RandomState(seed)
 
         # Генерим вектор параметров из нормального распределения
         self.w = rs.randn(n)
