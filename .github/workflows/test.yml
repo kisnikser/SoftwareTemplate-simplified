@@ -40,7 +40,7 @@ jobs:
       
       - name: Generate coverage badge
         run: |
-          python badge_generator.py
+          python src/badge_generator.py
 
       - name: Upload coverage badge
         uses: actions/upload-artifact@v4
