@@ -27,11 +27,11 @@ jobs:
         
       - name: Install PyTest
         run: |
-          pip install -U "pytest>=7.2.0" "pytest-cov>=4.0.0"
+          sudo pip install -U "pytest>=7.2.0" "pytest-cov>=4.0.0"
         
       - name: Install Dependencies
         run: |    
-          pip install -U -r src/requirements.txt
+          sudo pip install -U -r src/requirements.txt
           
       - name: Testing
         run: |
