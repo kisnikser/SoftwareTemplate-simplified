@@ -42,7 +42,19 @@ jobs:
         run: |
           python src/badge_generator.py
 
+      - name: Check for changes in coverage badge
+        id: check_changes
+        run: |
+          if git diff --exit-code -- coverage-badge.svg; then
+            echo "No changes in coverage badge"
+            echo "::set-output name=changes::false"
+          else
+            echo "Changes detected in coverage badge"
+            echo "::set-output name=changes::true"
+          fi
+
       - name: Commit coverage badge
+        if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
